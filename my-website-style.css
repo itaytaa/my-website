@@ -1,0 +1,230 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.top-container {
+    padding: 10px;
+    height: 350px;
+    background: #c9dbe9;
+    background: -webkit-linear-gradient(top, #a7cff0 0%, rgb(181, 224, 194) 100%);
+    background: -linear-gradient(top, #97c6e9 0%, rgb(161, 201, 166) 100%);
+    background: -moz-linear-gradient(top, #b1cee4 0%, #fff 100%);
+    text-align: center;
+}
+
+.top-container ul {
+    z-index: 10;
+    position: relative;
+    margin-right: 80px;
+    text-align: left;
+}
+
+.menu-bar {
+    font-size: 18px;
+    display: inline-block;
+    margin: 20px;
+    letter-spacing: 3px;
+    z-index: 30;
+    font-family: 'Pompiere', cursive;
+}
+
+.games-gallery {
+    background-color: rgb(140, 165, 150);
+    border-radius: 40px;
+    width: 1300px;
+    height: 350px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 20px 24px 56px 12px rgba(0, 0, 0, 0.75);
+}
+.websites-gallery{
+    background-color:rgb(236, 214, 214);
+    border-radius: 40px;
+    width: 1300px;
+    height: 350px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 20px 24px 56px 12px rgba(0, 0, 0, 0.75);
+}
+
+.games-area {
+    padding: 0;
+}
+
+.menu-bar:hover {
+    color: rgb(187, 125, 9);
+   
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 10px;
+    font-family: 'Pompiere', cursive;
+}
+
+p {
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-family: 'Pompiere', cursive;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Bungee Shade', cursive;
+    margin-left: 100px;
+    padding-top: 30px;
+    letter-spacing: 4px;
+}
+
+.middle-container {
+    height:550px;
+    width: 100%;
+    background-color:rgb(181, 224, 194)
+}
+
+.bottom-container {
+    height: 500px;
+    width: 100%;
+    background: #c9dbe9;
+    background: -webkit-linear-gradient(top,rgb(181, 224, 194)0%, rgb(181, 224, 194) 100%);
+    background: -linear-gradient(top, #97c6e9 0%, rgb(181, 224, 194) 100%);
+    background: -moz-linear-gradient(top, #b1cee4 0%, #fff 100%);
+}
+
+.cloud {
+    width: 200px;
+    height: 60px;
+    background: #fff;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    z-index: 0;
+    position: relative;
+}
+
+img {
+    min-height: 260px;
+    max-width: 260px;
+    border:7px solid rgb(157, 177, 171);
+    /* margin: 10px; */
+    border-radius: 40px;
+    margin-left:33px;
+    margin-top: 30px;
+}
+
+.games-list {
+    display: inline-block;
+}
+
+img:hover {
+    cursor: grab;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.clouds {
+    z-index: 0;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    left: auto;
+    right: 20px;
+}
+
+.x1 {
+    z-index: 0;
+    -webkit-animation: moveclouds 30s linear infinite;
+    -moz-animation: moveclouds 30s linear infinite;
+    -o-animation: moveclouds 30s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+
+.x2 {
+    left: 100px;
+    top: -150px;
+    z-index: 0;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6;
+    /*opacity proportional to the size*/
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+    z-index: 0;
+    left: -250px;
+    top: -270px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    /*opacity proportional to the size*/
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -100px;
+    }
+}
+
+@-moz-keyframes moveclouds {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@-o-keyframes moveclouds {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
