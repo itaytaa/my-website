@@ -4,7 +4,6 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "my-website.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
